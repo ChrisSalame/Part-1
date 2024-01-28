@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAssignment1 : MonoBehaviour
 {
-    Rigidbody2D rigidbody;
+    Rigidbody2D rigidbodyPlayer;
     float acceleration;
     float steering;
     public float forwardSpeed = 250;
@@ -12,7 +12,7 @@ public class PlayerAssignment1 : MonoBehaviour
     public float maxSpeed = 250;
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigidbodyPlayer = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -24,11 +24,11 @@ public class PlayerAssignment1 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.AddTorque(steering * -steeringSpeed * Time.deltaTime);
+        rigidbodyPlayer.AddTorque(steering * -steeringSpeed * Time.deltaTime);
         Vector2 force = transform.up * acceleration * forwardSpeed * Time.deltaTime;
-        if (rigidbody.velocity.magnitude < maxSpeed)
+        if (rigidbodyPlayer.velocity.magnitude < maxSpeed)
         {
-            rigidbody.AddForce(force);
+            rigidbodyPlayer.AddForce(force);
 
         }
 
