@@ -35,14 +35,4 @@ public class PlayerAssignment1 : MonoBehaviour
         }
 
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Collision Test, Player Hit");
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Debug.Log("Collision Test, Player Hit Exit");
-    }
 }
