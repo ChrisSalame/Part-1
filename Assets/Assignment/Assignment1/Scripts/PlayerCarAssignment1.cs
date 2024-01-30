@@ -7,9 +7,9 @@ public class PlayerAssignment1 : MonoBehaviour
     Rigidbody2D rigidbodyPlayer;
     float acceleration;
     float steering;
-    public float forwardSpeed = 250;
-    public float steeringSpeed = 30;
-    public float maxSpeed = 250;
+    public float forwardSpeed = 500;
+    public float steeringSpeed = 20;
+    public float maxSpeed = 650;
     void Start()
     {
         rigidbodyPlayer = GetComponent<Rigidbody2D>();
