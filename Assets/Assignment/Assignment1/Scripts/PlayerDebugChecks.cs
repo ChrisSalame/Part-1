@@ -15,6 +15,7 @@ public class PlayerDebugChecks : MonoBehaviour
     {
         
     }
+    //This uses the OnTriggerEnter2D to debug if the player hits the halfway point
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject + "Hitting Checkpoint");

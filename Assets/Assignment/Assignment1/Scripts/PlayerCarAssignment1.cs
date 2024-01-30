@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAssignment1 : MonoBehaviour
 {
+    //This sets all the floats that are needed for player movement
     Rigidbody2D rigidbodyPlayer;
     float acceleration;
     float steering;
@@ -20,8 +21,20 @@ public class PlayerAssignment1 : MonoBehaviour
     {
         acceleration = Input.GetAxis("Vertical");
         steering = Input.GetAxis("Horizontal");
+
+        //This line of code has the player get a speed boost while pressing space
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            forwardSpeed = 800;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            forwardSpeed = 500;
+        }
+
     }
 
+    //This code manages the speed of the player and increases and decreses speed based on how fast its going simulating physics
     private void FixedUpdate()
     {
         rigidbodyPlayer.AddTorque(steering * -steeringSpeed * Time.deltaTime);
