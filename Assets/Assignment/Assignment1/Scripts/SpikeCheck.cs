@@ -8,10 +8,7 @@ public class SpikeCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Sensor != null)
-        {
-            Sensor.color = Color.clear;
-        }
+
     }
 
     // Update is called once per frame
@@ -22,11 +19,11 @@ public class SpikeCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Sensor != null) Sensor.color = Color.green;
+        Debug.Log(collision.gameObject + "Hitting Checkpoint");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (Sensor != null) Sensor.color = Color.clear;
+        Debug.Log(collision.gameObject + "Leaving Checkpoint");
     }
 }
