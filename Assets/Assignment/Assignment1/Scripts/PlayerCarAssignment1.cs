@@ -25,7 +25,9 @@ public class PlayerAssignment1 : MonoBehaviour
     private void FixedUpdate()
     {
         rigidbodyPlayer.AddTorque(steering * -steeringSpeed * Time.deltaTime);
+
         Vector2 force = transform.up * acceleration * forwardSpeed * Time.deltaTime;
+
         if (rigidbodyPlayer.velocity.magnitude < maxSpeed)
         {
             rigidbodyPlayer.AddForce(force);

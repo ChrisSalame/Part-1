@@ -21,6 +21,5 @@ public class ObstacleSpinner : MonoBehaviour
     {
         transform.Rotate(Vector3.forward, -spinSpeed * Time.deltaTime);
 
-        obstaclerigidBody.AddForce(movement * pushingForce * Time.deltaTime);
     }
 }
