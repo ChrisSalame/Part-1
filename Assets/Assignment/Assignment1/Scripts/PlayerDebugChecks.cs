@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeCheck : MonoBehaviour
+public class PlayerDebugChecks : MonoBehaviour
 {
-    public SpriteRenderer Sensor;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -16,7 +15,6 @@ public class SpikeCheck : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject + "Hitting Checkpoint");
