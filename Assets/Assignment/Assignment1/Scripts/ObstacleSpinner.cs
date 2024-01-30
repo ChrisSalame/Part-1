@@ -22,4 +22,6 @@ public class ObstacleSpinner : MonoBehaviour
         transform.Rotate(Vector3.forward, -spinSpeed * Time.deltaTime);
 
     }
+
+
 }
