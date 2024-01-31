@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: spinSpeed
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 4092648073737460882, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+      propertyPath: spinningObstacle
+      value: 
+      objectReference: {fileID: 1272775819}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -973,6 +977,11 @@ Transform:
   - {fileID: 1217339584}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1027541726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7530739090616511805, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+  m_PrefabInstance: {fileID: 1030478175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1030478175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1025,6 +1034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpininObstacleVer3
       objectReference: {fileID: 0}
+    - target: {fileID: 4092648073737460882, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+      propertyPath: spinningObstacle
+      value: 
+      objectReference: {fileID: 1027541726}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1187,6 +1200,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1232385576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7530739090616511805, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+  m_PrefabInstance: {fileID: 5386236887928846742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1272775819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7530739090616511805, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+  m_PrefabInstance: {fileID: 154850664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1343777580
 GameObject:
   m_ObjectHideFlags: 0
@@ -130927,6 +130950,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1606184591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7530739090616511805, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+  m_PrefabInstance: {fileID: 1736143820}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1646306041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144778,6 +144806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpininObstacleVer3
       objectReference: {fileID: 0}
+    - target: {fileID: 4092648073737460882, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+      propertyPath: spinningObstacle
+      value: 
+      objectReference: {fileID: 1606184591}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -145206,6 +145238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpininObstacleVer2
       objectReference: {fileID: 0}
+    - target: {fileID: 4092648073737460882, guid: 4f76132846614fc4badf6d841ddb0892, type: 3}
+      propertyPath: spinningObstacle
+      value: 
+      objectReference: {fileID: 1232385576}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
