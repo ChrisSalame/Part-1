@@ -4,7 +4,9 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ObstacleSpinner : MonoBehaviour
+
 {
+    public GameObject spinningObstacle;
     public float spinSpeed = 300;
     public float pushingForce = 50;
     Rigidbody2D obstaclerigidBody;
@@ -13,6 +15,8 @@ public class ObstacleSpinner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //This Instantiates the prefab of the spinning obstacles
+        Instantiate(spinningObstacle, new Vector2(50, 0), Quaternion.identity);
         obstaclerigidBody = GetComponent<Rigidbody2D>();
     }
 
